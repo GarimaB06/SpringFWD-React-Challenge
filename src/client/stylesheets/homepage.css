@@ -7,6 +7,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.button{
+    border: 1px black solid;
+    color: #ff7381;
+    background-color: black;
+    padding: 15px;
+    border-radius: 4rem;
+    font-weight: 800;
+    font-size: 15px;
+    margin: 16px;
+    transition: 0.4s;
+}
+
+
+.button:hover{
+    background-color: #ff7381;
+    color: black;
+    border: 1px #ff7381 solid;
+}
+
 .section-1{
     margin-right: 8%;
     margin-left: 8%;
@@ -15,26 +34,28 @@
 
 .nav-bar{
     display: flex;
+    top: 0;
+    position: sticky;
     align-items: center;
     background: url(https://www.sprintfwd.com/images/hero-bg.png) repeat;
-    height: 20vh;
-    font-size: 1.5rem;
+    font-size: 13px;
     color: white;
     font-weight: 700;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .btn-link {
     text-decoration: none;
     margin: 15px;
-    padding: 20px 20px;
-    border: 1.5px transparent solid;
+    padding: 18px 30px;
+    border: 1px transparent solid;
     color: white;
+    transition: .8s;
 }
 
 .btn-link:hover {
     border: 1px white solid;
-    padding: 20px;
+    border-radius: 0.5rem;
+    padding: 18px 30px;
     color: white;
-    transition: .8s;
 }

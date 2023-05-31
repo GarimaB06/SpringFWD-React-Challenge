@@ -1,0 +1,44 @@
+.to-do-list{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    padding: 0px;
+}
+
+input{
+    border: 2px transparent;
+    border-radius: 4rem;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: 0.4s
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    width: auto;
+    padding: 40px;
+    list-style: none;
+    font-weight: light;
+    font-size: medium;
+}
+
+input:hover{
+    border-color: #ff7381;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.delete-button, .update-button{
+    border: none;
+    background-color: #f7f7f7;
+}
+
+svg:hover{
+    fill: black;
+}
+

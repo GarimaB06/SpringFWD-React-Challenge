@@ -4,10 +4,12 @@ import '../stylesheets/homepage.css'
 const Navbar = () => {
     return(
         <div className="nav-bar">
-            {/* <div className="nav-bar">CHOOSE A TABLE</div> */}
-            <Link className='btn-link' to='/members-page'>MEMBERS PAGE</Link>
-            <Link className='btn-link' to='/teams-page'>TEAMS PAGE</Link>
-            <Link className='btn-link' to='/to-do-list'>TO DO LIST</Link>
+                <img className="logo" alt="SprintFWD-logo" src="https://www.sprintfwd.com/images/sprintfwd.svg"/>
+                <div className="nav-bar">
+                    <Link className='btn-link' to='/members-page'>Members Page</Link>
+                    <Link className='btn-link' to='/teams-page'>Teams Page</Link>
+                    <Link className='btn-link' to='/to-do-list'>To Do List</Link>
+                </div>
         </div>
     )
 }

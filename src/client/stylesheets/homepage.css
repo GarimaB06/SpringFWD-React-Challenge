@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-1{
+    margin-right: 8%;
+    margin-left: 8%;
+
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    background: url(https://www.sprintfwd.com/images/hero-bg.png) repeat;
+    height: 20vh;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.btn-link {
+    text-decoration: none;
+    margin: 15px;
+    padding: 20px 20px;
+    border: 1.5px transparent solid;
+    color: white;
+}
+
+.btn-link:hover {
+    border: 1px white solid;
+    padding: 20px;
+    color: white;
+    transition: .8s;
+}

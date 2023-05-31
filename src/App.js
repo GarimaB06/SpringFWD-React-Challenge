@@ -5,6 +5,7 @@ import MembersPage from './client/components/MembersPage';
 import ToDoList from './client/components/ToDoList';
 import TeamsPage from './client/components/TeamsPage';
 import Navbar from './client/components/Navbar';
+import './client/stylesheets/homepage.css'
 
 function App() {
   return (

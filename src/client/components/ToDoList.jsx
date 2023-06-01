@@ -26,7 +26,7 @@ const ToDoList = () => {
         <div className="to-do-list">
             <h1 className="title">CREATE A TO-DO-LIST</h1>
             <input value={input} onChange={handleInputChange}/>
-            <button className="button" onClick={() => addListItems()}>Add</button>
+            <button className="button add-button" onClick={() => addListItems()}>Add</button>
             <ul>
                 {list.map((item, index)=>(
                     <li className="list-item" key={index}>

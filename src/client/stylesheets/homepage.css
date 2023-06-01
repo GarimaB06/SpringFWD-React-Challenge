@@ -45,6 +45,7 @@ body{
     color: white;
     font-weight: 700;
     justify-content: space-around;
+    height: 10vh;
 }
 
 .btn-link {
@@ -71,26 +72,27 @@ body{
     .nav-bar{
         height: 10vh;
         z-index: 2;
+        /* display: block; */
     }
     .hamburger-icon{
         display: block;
         background-color: transparent;
         border: none;
-        transition: 1s;
+        transition: .5s;
         z-index: 999;
     }
     .hamburger-1{
         width: 30px;
         height: 3px;
         border-top: 2px white solid;
-        transition: 1s;
+        transition: .5s;
         margin-bottom: 10px;
     }
     .hamburger-2{
         width: 30px;
         height: 3px;
         border-top: 2px white solid;
-        transition: 1s;
+        transition: .5s;
     }
     .open .hamburger-1 {
         transform: rotate(45deg);

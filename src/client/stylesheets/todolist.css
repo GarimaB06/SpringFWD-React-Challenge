@@ -1,5 +1,6 @@
 .to-do-list{
-    display: grid;
+    display: flex;
+    flex-direction: column;   
     justify-content: center;
     align-items: center;
 }
@@ -9,6 +10,7 @@ ul{
 }
 
 input{
+    width: 40%;
     border: 2px transparent;
     border-radius: 4rem;
     padding: 15px;
@@ -31,6 +33,10 @@ input{
 input:hover{
     border-color: #ff7381;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.add-button{
+    width: 200px;
 }
 
 .delete-button, .update-button{

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+body{
+    margin: 0;
+}
 
 .App{
     display: flex;
@@ -58,4 +61,50 @@
     border-radius: 0.5rem;
     padding: 18px 30px;
     color: white;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .nav-bar{
+        height: 10vh;
+        z-index: 2;
+    }
+    .hamburger-icon{
+        display: block;
+        background-color: transparent;
+        border: none;
+        transition: 1s;
+        z-index: 999;
+    }
+    .hamburger-1{
+        width: 30px;
+        height: 3px;
+        border-top: 2px white solid;
+        transition: 1s;
+        margin-bottom: 10px;
+    }
+    .hamburger-2{
+        width: 30px;
+        height: 3px;
+        border-top: 2px white solid;
+        transition: 1s;
+    }
+    .open .hamburger-1 {
+        transform: rotate(45deg);
+        transform-origin: 3.5px;
+    }
+    
+    .open .hamburger-2 {
+        transform: rotate(-45deg);
+        transform-origin: 6px;
+    }
+
+    .btn-link{
+        display: none;
+    }
+   
+    
 }

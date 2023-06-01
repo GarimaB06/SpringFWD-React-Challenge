@@ -13,7 +13,8 @@ tbody{
     background-color: #f7f7f7;
 }
 
-td {   
+td {
+    border-bottom: 1px #5d32d5 solid;   
     padding: 15px 40px;
     font-weight: light;
     font-size: medium;

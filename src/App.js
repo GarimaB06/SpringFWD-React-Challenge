@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react'
-import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import MembersPage from './client/components/MembersPage';
 import ToDoList from './client/components/ToDoList';
 import TeamsPage from './client/components/TeamsPage';

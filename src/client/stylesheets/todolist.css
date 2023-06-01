@@ -7,6 +7,7 @@
 
 ul{
     padding: 0px;
+    width: 45%;
 }
 
 input{
@@ -19,9 +20,23 @@ input{
     transition: 0.4s
 }
 
+.checkbox{
+    width: 20px;
+    background: none;
+    box-shadow: none;
+    
+}
+
+.to-do-string{
+    word-break: break-word;
+    width: 80%;
+    text-align: start;
+}
+
 .list-item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #f7f7f7;
     width: auto;
     padding: 40px;

@@ -7,7 +7,7 @@
 
 ul{
     padding: 0px;
-    width: 45%;
+    width: 60%;
 }
 
 input{
@@ -20,11 +20,14 @@ input{
     transition: 0.4s
 }
 
-.checkbox{
-    width: 20px;
+.checkbox[type="checkbox"]{
+    appearance: auto;
+    height: 25px;
+    width: 25px;
     background: none;
+    border-color:#ff7381;
     box-shadow: none;
-    
+    color: transparent;
 }
 
 .to-do-string{
@@ -43,6 +46,8 @@ input{
     list-style: none;
     font-weight: light;
     font-size: medium;
+    border-bottom: 1px #5d32d5 solid;
+    margin-bottom: 5px;
 }
 
 input:hover{
@@ -63,3 +68,29 @@ svg:hover{
     fill: black;
 }
 
+@media (max-width: 480px) {
+     ul{
+        width: 80%;
+    }
+    input {
+        width: 80%;
+    }
+    .add-button {
+        width: 90%;
+    }
+    .list-item {
+        padding: 20px 0;
+    }
+    svg{
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 80%;
+    }
+    svg{
+        margin: 0 10px;
+    }
+}

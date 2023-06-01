@@ -1,19 +1,27 @@
-import React, {useState} from "react";
 import '../stylesheets/todolist.css'
 
-const ToDoList = () => {
-    const [input, setInput] = useState("")
-    const [list, setList] = useState([]) 
-
+const initialTaskState = {
+    checked: false,
+    toDoString: "",
+}
+const ToDoList = ({input, setInput, list, setList}) => { 
     const handleInputChange = (e) => {
         setInput(e.target.value)
     }
 
     const addListItems = () => {
         if(input.trim() !== ""){
-            setList([...list, input])
+            const initialTaskStateCopy = {...initialTaskState}
+            initialTaskStateCopy.toDoString = input
+            setList([...list, initialTaskStateCopy])
             setInput("")
         }
+    }
+
+    const handleChecked = (index) => {
+        const listCopy = [...list] 
+        listCopy[index].checked = !listCopy[index].checked
+        setList(listCopy)
     }
 
     const deleteItem = (itemIndex) => {
@@ -24,14 +32,14 @@ const ToDoList = () => {
 
     return(
         <div className="to-do-list">
-            <h1 className="title">CREATE A TO-DO-LIST</h1>
+            <h1 className="title">TO-DO-LIST</h1>
             <input value={input} onChange={handleInputChange}/>
             <button className="button add-button" onClick={() => addListItems()}>Add</button>
             <ul>
                 {list.map((item, index)=>(
                     <li className="list-item" key={index}>
-                        <input type="checkbox" className="checkbox"/>
-                        <div className="to-do-string">{item}</div>
+                        <input type="checkbox" className="checkbox" checked={item.checked} onChange={() => handleChecked(index)}/>
+                        <div className="to-do-string">{item.toDoString}</div>
                         <div>
                             <button className="delete-button" onClick={() => deleteItem()}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff7381" class="bi bi-trash3" viewBox="0 0 16 16">

@@ -9,6 +9,9 @@ import './client/stylesheets/homepage.css'
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false)
+  const [input, setInput] = useState("")
+  const [list, setList] = useState([]) 
+
   return (
     <div className="App">
      <Router>
@@ -16,7 +19,7 @@ function App() {
       <Routes> 
         <Route exact
               path="/members-page" element={<MembersPage/>}/>
-        <Route exact path='/to-do-list' element={<ToDoList/>}/>
+        <Route exact path='/to-do-list' element={<ToDoList input={input} setInput={setInput} list={list} setList={setList}/>}/>
         <Route exact path='/teams-page' element={<TeamsPage/>}/>
         <Route/>
       </Routes>

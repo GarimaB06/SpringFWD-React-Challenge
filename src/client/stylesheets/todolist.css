@@ -59,7 +59,7 @@ input:hover{
     width: 200px;
 }
 
-.delete-button, .update-button{
+.delete-button, .update-button, .save-edited{
     border: none;
     background-color: #f7f7f7;
 }

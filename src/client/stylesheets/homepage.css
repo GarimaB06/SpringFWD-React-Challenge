@@ -4,11 +4,8 @@ body{
 }
 
 .App{
-    /* display: flex;
-    flex-direction: column; */
     height: 100vh;
     overflow: auto;
-    /* height: 100%; */
     font-family: 'Montserrat', sans-serif;
 }
 

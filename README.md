@@ -22,10 +22,21 @@ Installation:
 
 To install and run this project locally, follow these steps:
 
-1) Clone the repository from GitHub.
-2) Set up the required dependencies by running npm install.
-3) Start the development server using npm start. 
-4) Access the application by navigating to http://localhost:3000 in your web browser.
+Step 1) 
+
+Clone the repository - https://github.com/GarimaB06/SpringFWD-React-Challenge.git
+
+Step 2) 
+
+Set up the required dependencies by running npm install.
+
+Step 3) 
+
+Start the development server using npm start. 
+
+Step 4) 
+
+Access the application by navigating to http://localhost:3000 in your web browser.
 
 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the terms of the license.

@@ -43,7 +43,8 @@ Start the development server using
 
 ```sh
 npm start 
-``
+```
+
 Step 4) 
 
 Access the application by navigating to 

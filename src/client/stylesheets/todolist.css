@@ -1,96 +1,99 @@
-.to-do-list{
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;
-    align-items: center;
+.to-do-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-ul{
-    padding: 0px;
-    width: 60%;
+ul {
+	padding: 0px;
+	width: 60%;
 }
 
-input{
-    width: 40%;
-    border: 2px transparent;
-    border-radius: 4rem;
-    padding: 15px;
-    margin: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    transition: 0.4s
+input {
+	width: 40%;
+	border: 2px transparent;
+	border-radius: 4rem;
+	padding: 15px;
+	margin: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+		rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+	transition: 0.4s;
 }
 
-.checkbox[type="checkbox"]{
-    appearance: auto;
-    height: 25px;
-    width: 25px;
-    background: none;
-    border-color:#ff7381;
-    box-shadow: none;
-    color: transparent;
+.checkbox[type="checkbox"] {
+	appearance: auto;
+	height: 25px;
+	width: 25px;
+	background: none;
+	border-color: #ff7381;
+	box-shadow: none;
+	color: transparent;
 }
 
-.to-do-string{
-    word-break: break-word;
-    width: 80%;
-    text-align: start;
+.to-do-string {
+	word-break: break-word;
+	width: 80%;
+	text-align: start;
 }
 
-.list-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f7f7f7;
-    width: auto;
-    padding: 40px;
-    list-style: none;
-    font-weight: light;
-    font-size: medium;
-    border-bottom: 1px #5d32d5 solid;
-    margin-bottom: 5px;
+.list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f7f7f7;
+	width: auto;
+	padding: 0 20px;
+	list-style: none;
+	font-weight: light;
+	font-size: medium;
+	border-bottom: 1px #5d32d5 solid;
+	margin-bottom: 5px;
 }
 
-input:hover{
-    border-color: #ff7381;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+input:hover {
+	border-color: #ff7381;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.add-button{
-    width: 200px;
+.add-button {
+	width: 200px;
 }
 
-.delete-button, .update-button, .save-edited{
-    border: none;
-    background-color: #f7f7f7;
+.delete-button,
+.update-button,
+.save-edited {
+	border: none;
+	background-color: #f7f7f7;
 }
 
-svg:hover{
-    fill: black;
+svg:hover {
+	fill: black;
 }
 
 @media (max-width: 480px) {
-     ul{
-        width: 80%;
-    }
-    input {
-        width: 80%;
-    }
-    .add-button {
-        width: 90%;
-    }
-    .list-item {
-        padding: 20px 0;
-    }
-    svg{
-        margin: 10px 0;
-    }
+	ul {
+		width: 80%;
+	}
+	input {
+		width: 80%;
+	}
+	.add-button {
+		width: 90%;
+	}
+	.list-item {
+		padding: 20px 0;
+	}
+	svg {
+		margin: 10px 0;
+	}
 }
 
 @media (max-width: 768px) {
-    input {
-        width: 80%;
-    }
-    svg{
-        margin: 0 10px;
-    }
+	input {
+		width: 80%;
+	}
+	svg {
+		margin: 0 10px;
+	}
 }

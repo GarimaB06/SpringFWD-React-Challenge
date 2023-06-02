@@ -1,109 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
-body{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap");
+body {
+	margin: 0;
 }
 
-.App{
-    height: 100vh;
-    overflow: auto;
-    font-family: 'Montserrat', sans-serif;
+.App {
+	height: 100vh;
+	overflow: auto;
+	font-family: "Montserrat", sans-serif;
 }
 
-.button{
-    border: 1px black solid;
-    color: #ff7381;
-    background-color: black;
-    padding: 15px;
-    border-radius: 4rem;
-    font-weight: 800;
-    font-size: 15px;
-    margin: 16px;
-    transition: 0.4s;
+.button {
+	border: 1px black solid;
+	color: #ff7381;
+	background-color: black;
+	padding: 15px;
+	border-radius: 4rem;
+	font-weight: 800;
+	font-size: 15px;
+	margin: 16px;
+	transition: 0.4s;
 }
 
-
-.button:hover{
-    background-color: #ff7381;
-    color: black;
-    border: 1px #ff7381 solid;
+.button:hover {
+	background-color: #ff7381;
+	color: black;
+	border: 1px #ff7381 solid;
 }
 
-.section-1{
-    margin-right: 8%;
-    margin-left: 8%;
-
+.section-1 {
+	margin-right: 8%;
+	margin-left: 8%;
 }
 
-
-.nav-bar{
-    display: flex;
-    top: 0;
-    position: sticky;
-    align-items: center;
-    background: url(https://www.sprintfwd.com/images/hero-bg.png) repeat;
-    font-size: 13px;
-    color: white;
-    font-weight: 700;
-    justify-content: space-around;
-    height: 80px;
+.nav-bar {
+	display: flex;
+	top: 0;
+	position: sticky;
+	align-items: center;
+	background: url(https://www.sprintfwd.com/images/hero-bg.png) repeat;
+	font-size: 13px;
+	color: white;
+	font-weight: 700;
+	justify-content: space-around;
+	height: 80px;
 }
 
 .btn-link {
-    text-decoration: none;
-    margin: 15px;
-    padding: 18px 30px;
-    border: 1px transparent solid;
-    color: white;
-    transition: .8s;
+	text-decoration: none;
+	margin: 15px;
+	padding: 18px 30px;
+	border: 1px transparent solid;
+	color: white;
+	transition: 0.8s;
 }
 
 .btn-link:hover {
-    border: 1px white solid;
-    border-radius: 0.5rem;
-    padding: 18px 30px;
-    color: white;
+	border: 1px white solid;
+	border-radius: 0.5rem;
+	padding: 18px 30px;
+	color: white;
 }
 
-.hamburger-icon{
-    display: none;
+.hamburger-icon {
+	display: none;
 }
 
-@media (max-width: 768px){
-    .nav-bar{
-        height: 80px;
-        z-index: 2;
-    }
-    .hamburger-icon{
-        display: block;
-        background-color: transparent;
-        border: none;
-        transition: .5s;
-        z-index: 999;
-    }
-    .hamburger-1{
-        width: 30px;
-        height: 3px;
-        border-top: 2px white solid;
-        transition: .5s;
-        margin-bottom: 10px;
-    }
-    .hamburger-2{
-        width: 30px;
-        height: 3px;
-        border-top: 2px white solid;
-        transition: .5s;
-    }
-    .open .hamburger-1 {
-        transform: rotate(45deg);
-        transform-origin: 3.5px;
-    }
-    
-    .open .hamburger-2 {
-        transform: rotate(-45deg);
-        transform-origin: 6px;
-    }
+@media (max-width: 768px) {
+	.nav-bar {
+		height: 80px;
+		z-index: 2;
+	}
+	.hamburger-icon {
+		display: block;
+		background-color: transparent;
+		border: none;
+		transition: 0.5s;
+		z-index: 999;
+	}
+	.hamburger-1 {
+		width: 30px;
+		height: 3px;
+		border-top: 2px white solid;
+		transition: 0.5s;
+		margin-bottom: 10px;
+	}
+	.hamburger-2 {
+		width: 30px;
+		height: 3px;
+		border-top: 2px white solid;
+		transition: 0.5s;
+	}
+	.open .hamburger-1 {
+		transform: rotate(45deg);
+		transform-origin: 3.5px;
+	}
 
-    .btn-link{
-        display: none;
-    }
+	.open .hamburger-2 {
+		transform: rotate(-45deg);
+		transform-origin: 6px;
+	}
+
+	.btn-link {
+		display: none;
+	}
 }

@@ -1,21 +1,33 @@
 import React from "react";
 import "../stylesheets/tables.css";
 
-const Table = ({ data = [], headerKeys = [] }) => {
-	// const splitHeaderKey = () => {
+const Table = ({
+	data = [],
+	headerKeys = [],
+	renderFunctions = {},
+	headersMap = {},
+}) => {
+	const parseDatum = (headerKey, datum) => {
+		if (renderFunctions[headerKey]) {
+			return renderFunctions[headerKey](datum);
+		}
+		const keysArray = headerKey.split(".");
+		let result = datum;
+		while (keysArray.length) {
+			const keyStr = keysArray.shift();
+			result = result[keyStr];
+		}
+		return result;
+	};
 
-	// }
 	const renderNestedData = () => {
 		return (
 			<tbody>
 				{data.map((datum, index) => (
 					<tr key={index}>
 						{headerKeys.map((headerKey, index) => (
-							<td>{datum[headerKey]}</td>
+							<td>{parseDatum(headerKey, datum)}</td>
 						))}
-						{/* <td>{datum.first_name}</td>
-                        <td>{datum.last_name}</td>
-                        <td>{datum.team.name}</td> */}
 					</tr>
 				))}
 			</tbody>
@@ -26,8 +38,10 @@ const Table = ({ data = [], headerKeys = [] }) => {
 		return (
 			<thead>
 				<tr>
-					{headerKeys.map((name, index) => (
-						<th key={`${index}${name}`}>{name}</th>
+					{headerKeys.map((headerKey, index) => (
+						<th key={`${index}${headerKey}`}>
+							{headersMap[headerKey] ?? headerKey}
+						</th>
 					))}
 				</tr>
 			</thead>

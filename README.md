@@ -1,6 +1,6 @@
 Project Name & description: TeamPulse - Streamlining Teams, Members and Tasks
 
-##Description: 
+Description: 
 
 TeamPulse is a web application that offers three main functionalities: a Members page, a Teams page, and a To-do list page. Each page provides specific features to manage and display data related to members, teams, and tasks.
 

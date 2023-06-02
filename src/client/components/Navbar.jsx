@@ -11,7 +11,7 @@ const Navbar = ({ drawerOpen, setDrawerOpen }) => {
 				src="https://www.sprintfwd.com/images/sprintfwd.svg"
 			/>
 			<div>
-				<Link className="btn-link" to="/members-page">
+				<Link className="btn-link" to="/">
 					Members Page
 				</Link>
 				<Link className="btn-link" to="/teams-page">
@@ -31,7 +31,7 @@ const Navbar = ({ drawerOpen, setDrawerOpen }) => {
 			<Drawer drawerOpen={drawerOpen}>
 				<Link
 					className="drawer-link"
-					to="/members-page"
+					to="/"
 					onClick={() => setDrawerOpen(false)}
 				>
 					MEMBERS PAGE

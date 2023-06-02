@@ -17,12 +17,10 @@ function App() {
      <Router>
       <Navbar drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}/>
       <Routes> 
-        <Route exact
-              path="/members-page" element={<MembersPage/>}/>
-        <Route exact path='/to-do-list' element={<ToDoList input={input} setInput={setInput} list={list} setList={setList}/>}/>
+        <Route exact path="/" element={<MembersPage/>}/>
         <Route exact path='/teams-page' element={<TeamsPage/>}/>
-        <Route exact path='/teams-page/:teamId' element={<MembersPage/>}/>
-        <Route/>
+        <Route path='/teams-page/:teamId' element={<MembersPage/>}/>
+        <Route path='/to-do-list' element={<ToDoList input={input} setInput={setInput} list={list} setList={setList}/>}/>
       </Routes>
      </Router>
     </div>

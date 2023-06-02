@@ -7,7 +7,7 @@
 
 ul {
 	padding: 0px;
-	width: 60%;
+	width: 50%;
 }
 
 input {
@@ -38,6 +38,7 @@ input {
 }
 
 .list-item {
+	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -45,10 +46,13 @@ input {
 	width: auto;
 	padding: 0 20px;
 	list-style: none;
-	font-weight: light;
 	font-size: medium;
 	border-bottom: 1px #5d32d5 solid;
 	margin-bottom: 5px;
+}
+
+.list-item input {
+	width: 60%;
 }
 
 input:hover {
@@ -72,11 +76,9 @@ svg:hover {
 }
 
 @media (max-width: 480px) {
-	ul {
-		width: 80%;
-	}
 	input {
-		width: 80%;
+		width: 90%;
+		margin: 0 10px;
 	}
 	.add-button {
 		width: 90%;
@@ -85,7 +87,7 @@ svg:hover {
 		padding: 20px 0;
 	}
 	svg {
-		margin: 10px 0;
+		margin: 20px;
 	}
 }
 
@@ -93,6 +95,10 @@ svg:hover {
 	input {
 		width: 80%;
 	}
+	ul {
+		width: 90%;
+	}
+
 	svg {
 		margin: 0 10px;
 	}

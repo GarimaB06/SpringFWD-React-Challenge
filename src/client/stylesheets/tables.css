@@ -38,3 +38,12 @@ thead th {
 	padding: 0.8rem;
 	margin: 0.5rem;
 }
+
+@media (max-width: 480px) {
+	td {
+		padding: 10px;
+	}
+	.title {
+		margin: 30px;
+	}
+}

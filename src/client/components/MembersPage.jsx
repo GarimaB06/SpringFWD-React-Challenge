@@ -4,6 +4,12 @@ import { MEMBERS_DATA, TEAMS } from "../data/data";
 import "../stylesheets/tables.css";
 import { Link, useParams } from "react-router-dom";
 
+const HEADERS_MAP = {
+	first_name: "FIRST NAME",
+	last_name: "LAST NAME",
+	"team.name": "TEAM NAME",
+};
+
 const MembersPage = () => {
 	const { teamId } = useParams();
 	const generatePageTitleString = () => {
@@ -37,17 +43,12 @@ const MembersPage = () => {
 		}
 		return headerKeys;
 	};
-	const headersMap = {
-		first_name: "FIRST NAME",
-		last_name: "LAST NAME",
-		"team.name": "TEAM NAME",
-	};
 
 	return (
 		<div className="members-page">
 			<h1 className="title">{generatePageTitleString()}</h1>
 			<Table
-				headersMap={headersMap}
+				headersMap={HEADERS_MAP}
 				renderFunctions={renderFunctions}
 				data={generateFilteredData()}
 				headerKeys={returnHeaderKeys()}

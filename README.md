@@ -1,4 +1,4 @@
-Project Name & description: TeamPulse - Streamlining Teams, Members and Tasks
+# TeamPulse - Streamlining Teams, Members and Tasks
 
 ## Description 
 

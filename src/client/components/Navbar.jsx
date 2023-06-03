@@ -5,11 +5,13 @@ import Drawer from "./Drawer";
 const Navbar = ({ drawerOpen, setDrawerOpen }) => {
 	return (
 		<div className="nav-bar">
-			<img
-				className="logo"
-				alt="SprintFWD-logo"
-				src="https://www.sprintfwd.com/images/sprintfwd.svg"
-			/>
+			<Link to="/">
+				<img
+					className="logo"
+					alt="SprintFWD-logo"
+					src="https://www.sprintfwd.com/images/sprintfwd.svg"
+				/>
+			</Link>
 			<div>
 				<Link className="btn-link" to="/">
 					Members Page

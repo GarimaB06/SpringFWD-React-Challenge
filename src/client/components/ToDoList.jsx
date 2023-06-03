@@ -1,5 +1,6 @@
 import "../stylesheets/todolist.css";
 import ListItem from "./ListItem";
+import STRINGS from "../data/strings";
 
 const initialTaskState = {
 	checked: false,
@@ -39,10 +40,10 @@ const ToDoList = ({ input, setInput, list, setList }) => {
 
 	return (
 		<div className="to-do-list">
-			<h1 className="title">TO-DO-LIST</h1>
+			<h1 className="title">{STRINGS.toDoList.toUpperCase()}</h1>
 			<input value={input} onChange={handleInputChange} />
 			<button className="button add-button" onClick={() => addListItems()}>
-				Add
+				{STRINGS.add}
 			</button>
 			<ul>
 				{list.map((item, index) => (

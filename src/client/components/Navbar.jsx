@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../stylesheets/homepage.css";
 import Drawer from "./Drawer";
+import STRINGS from "../data/strings";
+
 const Navbar = ({ drawerOpen, setDrawerOpen }) => {
 	return (
 		<div className="nav-bar">
@@ -14,13 +16,13 @@ const Navbar = ({ drawerOpen, setDrawerOpen }) => {
 			</Link>
 			<div>
 				<Link className="btn-link" to="/">
-					Members Page
+					{STRINGS.membersPage}
 				</Link>
 				<Link className="btn-link" to="/teams-page">
-					Teams Page
+					{STRINGS.teamsPage}
 				</Link>
 				<Link className="btn-link" to="/to-do-list">
-					To Do List
+					{STRINGS.toDoList}
 				</Link>
 			</div>
 			<button
@@ -36,21 +38,21 @@ const Navbar = ({ drawerOpen, setDrawerOpen }) => {
 					to="/"
 					onClick={() => setDrawerOpen(false)}
 				>
-					MEMBERS PAGE
+					{STRINGS.membersPage.toUpperCase()}
 				</Link>
 				<Link
 					className="drawer-link"
 					to="/teams-page"
 					onClick={() => setDrawerOpen(false)}
 				>
-					TEAMS PAGE
+					{STRINGS.teamsPage.toUpperCase()}
 				</Link>
 				<Link
 					className="drawer-link"
 					to="/to-do-list"
 					onClick={() => setDrawerOpen(false)}
 				>
-					TO DO LIST
+					{STRINGS.toDoList.toUpperCase()}
 				</Link>
 			</Drawer>
 		</div>

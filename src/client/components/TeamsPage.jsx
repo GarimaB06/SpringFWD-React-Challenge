@@ -2,6 +2,7 @@ import React from "react";
 import Table from "./Table";
 import { TEAMS } from "../data/data";
 import "../stylesheets/homepage.css";
+import STRINGS from "../data/strings";
 
 const HEADERS_MAP = {
 	name: "TEAM NAME",
@@ -11,7 +12,7 @@ const HEADERS_MAP = {
 const TeamsPage = () => {
 	return (
 		<div className="teams-page">
-			<h1 className="title">TEAMS TABLE</h1>
+			<h1 className="title">{STRINGS.teamsTable.toUpperCase()}</h1>
 			<Table
 				headersMap={HEADERS_MAP}
 				key="teamsTable"

@@ -11,7 +11,7 @@ const HEADERS_MAP = {
 
 const TeamsPage = () => {
 	return (
-		<div className="teams-page">
+		<div className="teams page">
 			<h1 className="title">{STRINGS.teamsTable.toUpperCase()}</h1>
 			<Table
 				headersMap={HEADERS_MAP}

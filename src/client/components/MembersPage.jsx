@@ -45,7 +45,7 @@ const MembersPage = () => {
 	};
 
 	return (
-		<div className="members-page">
+		<div className="members page">
 			<h1 className="title">{generatePageTitleString()}</h1>
 			<Table
 				headersMap={HEADERS_MAP}

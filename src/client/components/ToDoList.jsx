@@ -39,7 +39,7 @@ const ToDoList = ({ input, setInput, list, setList }) => {
 	};
 
 	return (
-		<div className="to-do-list">
+		<div className="to-do-list page">
 			<h1 className="title">{STRINGS.toDoList.toUpperCase()}</h1>
 			<input value={input} onChange={handleInputChange} />
 			<button className="button add-button" onClick={() => addListItems()}>

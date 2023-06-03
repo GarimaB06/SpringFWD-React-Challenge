@@ -109,6 +109,9 @@ body {
 }
 
 @media (max-width: 480px) {
+	.page {
+		padding-bottom: 120px;
+	}
 	.nav-bar {
 		bottom: 0px;
 		position: fixed;

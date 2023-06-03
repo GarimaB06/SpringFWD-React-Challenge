@@ -66,6 +66,9 @@ body {
 }
 
 @media (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
 	.nav-bar {
 		height: 80px;
 		z-index: 2;
@@ -102,5 +105,16 @@ body {
 
 	.btn-link {
 		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.nav-bar {
+		bottom: 0px;
+		position: fixed;
+		width: calc(100% - 40px);
+		margin: 20px;
+		border-radius: 10px;
+		top: inherit;
 	}
 }
